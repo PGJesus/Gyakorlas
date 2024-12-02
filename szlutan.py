@@ -5,7 +5,7 @@ for szolga in range(1, num_cellak + 1):
     for cella in range(szolga - 1, num_cellak, szolga):  
         cellak[cella] = not cellak[cella]  
 
-open_cellak = [i + 1 for i, is_open in enumerate(cellak) if is_open]
+nyitva_cellak = [i + 1 for i, nyitva in enumerate(cellak) if nyitva]
 
 print("Nyitva maradt cellák sorszámai:")
-print(open_cellak)
+print(nyitva_cellak)
